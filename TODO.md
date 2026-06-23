@@ -4,13 +4,13 @@
 
 | Status      | Task                                       | Comment                                                       |
 | ----------- | ------------------------------------------ | ------------------------------------------------------------- |
-| Not Started | Configure Azure OIDC for K8s               | Validate workload identity authentication                     |
-| Not Started | Configure Azure OIDC for ArgoCD            | Depends on K8s OIDC                                           |
-| Not Started | Validate ArgoCD SSO login                  | Verify Azure OIDC authentication works                        |
+| Done | Configure Azure OIDC for K8s               | Validate workload identity authentication                     |
+| Done | Configure Azure OIDC for ArgoCD            | Depends on K8s OIDC                                           |
+| Done | Validate ArgoCD SSO login                  | Verify Azure OIDC authentication works                        |
 | Not Started | Create public DNS records                  | Add A/CNAME records for required hostnames                    |
-| Not Started | Configure Ivanti VPN whitelist for K8s     | Verify approved VPN source IPs                                |
-| Not Started | Configure Ivanti VPN whitelist for ArgoCD  | Verify approved VPN source IPs                                |
-| Not Started | Configure routing and whitelist K8s → SQL  | Requires network approval                                     |
+| Done | Configure Ivanti VPN whitelist for K8s     | Verify approved VPN source IPs                                |
+| In Progress | Configure Ivanti VPN whitelist for ArgoCD  | Verify approved VPN source IPs                                |
+| In Progress | Configure routing and whitelist K8s → SQL  | Requires network approval                                     |
 | Not Started | Deploy Gateway API resources               | Replace NGINX ingress controller                              |
 | Not Started | Migrate ingress definitions to Gateway API | Verify all routes are migrated                                |
 | Not Started | Configure Gateway TLS per hostname         | Create certificate references for each hostname               |
