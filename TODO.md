@@ -7,6 +7,8 @@
 | Done | Configure Azure OIDC for K8s               | Validate workload identity authentication                     |
 | Done | Configure Azure OIDC for ArgoCD            | Depends on K8s OIDC                                           |
 | Done | Validate ArgoCD SSO login                  | Verify Azure OIDC authentication works                        |
+| Not Started | Configure Grafana OIDC | ProAct to configure Grafana login using Azure OIDC |
+| Not Started | Validate Grafana SSO login | Verify users can sign in and have correct permissions |
 | Not Started | Create public DNS records                  | Add A/CNAME records for required hostnames                    |
 | Done | Configure Ivanti VPN whitelist for K8s     | Verify approved VPN source IPs                                |
 | In Progress | Configure Ivanti VPN whitelist for ArgoCD  | Verify approved VPN source IPs                                |
