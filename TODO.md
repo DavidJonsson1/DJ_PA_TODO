@@ -9,12 +9,11 @@
 | Done | Validate ArgoCD SSO login                  | Verify Azure OIDC authentication works                        |
 | Not Started | Configure Grafana OIDC | ProAct to configure Grafana login using Azure OIDC |
 | Not Started | Validate Grafana SSO login | Verify users can sign in and have correct permissions |
-| Blocked | Configure DNS-01 solver in ClusterIssuer against Azure DNS | Proact task. Requires DNS Zone Contributor on fridaqa.nordicport.se in Azure DNS |
-| Blocked | Set up wildcard listener *.fridaqa.nordicport.se in shared-gateway | Proact task. Local hosts file testing works independently |
+| Blocked | Configure DNS-01 solver in ClusterIssuer  | Proact task. Needs DNS Zone Contributor on Azure DNS zone     |
+| Blocked | Set up wildcard listener *.fridaqa.nordicport.se | Proact task. Blocked by DNS-01 solver above              |
 | Done | Configure Ivanti VPN whitelist for K8s     | Verify approved VPN source IPs                                |
 | In Progress | Configure Ivanti VPN whitelist for ArgoCD  | Verify approved VPN source IPs                                |
 | In Progress | Configure routing and whitelist K8s → SQL  | Requires network approval                                     |
-| Done | Deploy Gateway API resources               | shared-gateway running in namespace gateway (Proact-managed)  |
 | Not Started | Migrate ingress definitions to Gateway API | Replace Ingress with HTTPRoute in services/ and platform/. See GATEWAY-MIGRATION.md |
 | Blocked | Configure Gateway TLS per hostname         | Awaiting wildcard listener + DNS-01 solver from Proact        |
 | Blocked | Migrate cert-manager certificate handling  | Certs managed centrally by Proact. Awaiting DNS-01 + wildcard |
