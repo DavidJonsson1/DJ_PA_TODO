@@ -9,7 +9,9 @@
 | Done | Validate ArgoCD SSO login                  | Verify Azure OIDC authentication works                        |
 | Not Started | Configure Grafana OIDC | ProAct to configure Grafana login using Azure OIDC |
 | Not Started | Validate Grafana SSO login | Verify users can sign in and have correct permissions |
-| Not Started | Create public DNS records                  | Add A/CNAME records for required hostnames                    |
+| Not Started | Create public DNS records                  | Add A/CNAME records for required hostnames; or can we make it without (fejk hosts file) |
+| Not Started | Konfigurera DNS-01 solver i ClusterIssuer mot Azure DNS	NP (Proact managed) | Will this work?! | 
+| Not Started | Sätt upp wildcard-listener *.fridaqa.nordicport.se i shared-gateway | Will this work with a local hosts file edit? |  
 | Done | Configure Ivanti VPN whitelist for K8s     | Verify approved VPN source IPs                                |
 | In Progress | Configure Ivanti VPN whitelist for ArgoCD  | Verify approved VPN source IPs                                |
 | In Progress | Configure routing and whitelist K8s → SQL  | Requires network approval                                     |
