@@ -9,18 +9,17 @@
 | Done | Validate ArgoCD SSO login                  | Verify Azure OIDC authentication works                        |
 | Not Started | Configure Grafana OIDC | ProAct to configure Grafana login using Azure OIDC |
 | Not Started | Validate Grafana SSO login | Verify users can sign in and have correct permissions |
-| Not Started | Create public DNS records                  | Add A/CNAME records for required hostnames; or can we make it without (fejk hosts file) |
-| Not Started | Konfigurera DNS-01 solver i ClusterIssuer mot Azure DNS	NP (Proact managed) | Will this work?! | 
-| Not Started | Sätt upp wildcard-listener *.fridaqa.nordicport.se i shared-gateway | Will this work with a local hosts file edit? |  
+| Blocked | Configure DNS-01 solver in ClusterIssuer against Azure DNS | Proact task. Requires DNS Zone Contributor on fridaqa.nordicport.se in Azure DNS |
+| Blocked | Set up wildcard listener *.fridaqa.nordicport.se in shared-gateway | Proact task. Local hosts file testing works independently |
 | Done | Configure Ivanti VPN whitelist for K8s     | Verify approved VPN source IPs                                |
 | In Progress | Configure Ivanti VPN whitelist for ArgoCD  | Verify approved VPN source IPs                                |
 | In Progress | Configure routing and whitelist K8s → SQL  | Requires network approval                                     |
-| Not Started | Deploy Gateway API resources               | Replace NGINX ingress controller                              |
-| Not Started | Migrate ingress definitions to Gateway API | Verify all routes are migrated                                |
-| Not Started | Configure Gateway TLS per hostname         | Create certificate references for each hostname               |
-| Not Started | Migrate cert-manager certificate handling  | Replace Ingress TLS annotations with Gateway-compatible setup |
-| Not Started | Verify certificate issuance per hostname   | Validate certificates for all exposed hostnames               |
-| Not Started | Verify certificate renewal                 | Confirm automatic renewal works after Gateway migration       |
+| Done | Deploy Gateway API resources               | shared-gateway running in namespace gateway (Proact-managed)  |
+| Not Started | Migrate ingress definitions to Gateway API | Replace Ingress with HTTPRoute in services/ and platform/. See GATEWAY-MIGRATION.md |
+| Blocked | Configure Gateway TLS per hostname         | Awaiting wildcard listener + DNS-01 solver from Proact        |
+| Blocked | Migrate cert-manager certificate handling  | Certs managed centrally by Proact. Awaiting DNS-01 + wildcard |
+| Blocked | Verify certificate issuance per hostname   | Awaiting Proact (DNS-01 solver + wildcard listener)           |
+| Blocked | Verify certificate renewal                 | Awaiting Proact (DNS-01 solver + wildcard listener)           |
 | Not Started | Validate VPN-only access                   | Access works through Ivanti VPN and is blocked publicly       |
 | Not Started | Validate application routing               | Verify all services are reachable                             |
 | Not Started | Validate SQL connectivity                  | Verify applications can access SQL endpoints                  |
