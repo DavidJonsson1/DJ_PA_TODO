@@ -14,8 +14,8 @@
 | 🔄 In Progress | Configure Ivanti VPN whitelist for ArgoCD | Proact   | Verify approved VPN source IPs                                |
 | ⛔ Blocked | Configure DNS-01 solver in ClusterIssuer  | Proact      | Proact task. Needs DNS Zone Contributor on Azure DNS zone     |
 | ⛔ Blocked | Set up wildcard listener *.fridaqa.nordicport.se | Proact | Proact task. Blocked by DNS-01 solver above              |
-| ⛔ Blocked | Configure Gateway TLS per hostname         | Proact      | Awaiting wildcard listener + DNS-01 solver from Proact        |
-| ⛔ Blocked | Migrate cert-manager certificate handling  | Proact      | Certs managed centrally by Proact. Awaiting DNS-01 + wildcard |
+| ⛔ Blocked | Configure Gateway TLS per hostname         | Both      | DJ needs help. Awaiting wildcard listener + DNS-01 solver from Proact        |
+| ⛔ Blocked | Migrate cert-manager certificate handling  | Both      | DJ needs help. Certs managed centrally by Proact. Awaiting DNS-01 + wildcard |
 | ⛔ Blocked | Verify certificate issuance per hostname   | Both        | Awaiting Proact (DNS-01 solver + wildcard listener)           |
 | ⛔ Blocked | Verify certificate renewal                 | Both        | Awaiting Proact (DNS-01 solver + wildcard listener)           |
 | ⬜ Not Started | Validate Grafana SSO login            | NordicPort  | Verify users can sign in and have correct permissions |
