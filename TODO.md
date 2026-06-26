@@ -10,8 +10,8 @@
 | ✅ Done | Configure Ivanti VPN whitelist for K8s     | Proact        | Verify approved VPN source IPs                                |
 | ✅ Done | Configure routing and whitelist K8s → SQL  | Proact        | Requires network approval                                     |
 | ✅ Done | Validate SQL connectivity                  | NordicPort  | Verify applications can access SQL endpoints                  |
+| ✅ Done | Configure Ivanti VPN whitelist for ArgoCD | Proact   | Verify approved VPN source IPs                                |
 | 🔄 In Progress | Configure Grafana OIDC                | Both      | ProAct to configure Grafana login using Azure OIDC |
-| 🔄 In Progress | Configure Ivanti VPN whitelist for ArgoCD | Proact   | Verify approved VPN source IPs                                |
 | ⛔ Blocked | Configure DNS-01 solver in ClusterIssuer  | Proact      | Proact task. Needs DNS Zone Contributor on Azure DNS zone     |
 | ⛔ Blocked | Set up wildcard listener *.fridaqa.nordicport.se | Proact | Proact task. Blocked by DNS-01 solver above              |
 | ⛔ Blocked | Configure Gateway TLS per hostname         | Both      | DJ needs help. Awaiting wildcard listener + DNS-01 solver from Proact        |
