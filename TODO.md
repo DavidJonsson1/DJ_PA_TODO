@@ -18,6 +18,7 @@
 | ⛔ Blocked | Migrate cert-manager certificate handling  | Both      | DJ needs help. Certs managed centrally by Proact. Awaiting DNS-01 + wildcard |
 | ⛔ Blocked | Verify certificate issuance per hostname   | Both        | Awaiting Proact (DNS-01 solver + wildcard listener)           |
 | ⛔ Blocked | Verify certificate renewal                 | Both        | Awaiting Proact (DNS-01 solver + wildcard listener)           |
+| ⬜ Not Started | Configure Ivanti VPN whitelist for https/servives dev02 | NordicPort  | Verify endpoints only when on VPN |
 | ⬜ Not Started | Validate Grafana SSO login            | NordicPort  | Verify users can sign in and have correct permissions |
 | ⬜ Not Started | Migrate ingress definitions to Gateway API | NordicPort | Replace Ingress with HTTPRoute in services/ and platform/. See GATEWAY-MIGRATION.md |
 | ⬜ Not Started | Validate VPN-only access               | NordicPort  | Access works through Ivanti VPN and is blocked publicly       |
